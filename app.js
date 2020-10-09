@@ -18,6 +18,7 @@ function startGame() {
   message.innerText = "";
 }
 
+//Functions
 function checkNumber(event) {
   event.preventDefault();
   if (theNumber == numberGuess.value) {
