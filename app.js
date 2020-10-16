@@ -27,7 +27,7 @@ function checkNumber(event) {
     startBtn.innerText = "Play again";
   } else if (theNumber > numberGuess.value && theNumber < 11) {
     message.innerText = `Wrong, you guessed ${numberGuess.value}, guess a little bit higher.`;
-  } else if (theNumber < numberGuess.value) {
+  } else if (theNumber < numberGuess.value && theNumber < 11) {
     message.innerText = `Wrong, you guessed ${numberGuess.value}, guess a little bit lower.`;
   } else {
     message.innerText =
